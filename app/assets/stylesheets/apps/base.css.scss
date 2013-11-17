@@ -1,0 +1,37 @@
+
+#main-region {
+  margin-top: 70px;
+}
+
+.profile {
+  @extend .thumbnail;
+  img {
+    @extend .img-rounded;
+  } 
+  table {
+    @extend .table, .table-condensed;
+  }
+  .caption h3, p {
+    text-align: center;
+  }
+}
+
+#panel-region {
+  #users_panel {
+    @extend .panel, .panel-default;
+    div:first-child {
+      @extend .panel-heading;
+      h3 {
+        @extend .panel-title;
+      }
+    }
+    div:last-child {
+      @extend .panel-body;
+    }
+  }
+}
+
+#users-region table {
+  @extend .table, .table-hover, .table-bordered;
+}
+

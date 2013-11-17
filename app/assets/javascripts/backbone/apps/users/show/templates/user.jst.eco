@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-sm-6 col-md-4"></div>
+  <div class="col-sm-6 col-md-4">
+    <div class="profile">
+      <img src="assets/<%= @id %>.jpeg" >
+      <div class="caption">
+        <h3><%= @full_name %></h3>
+        <table>
+          <tr>
+            <td>User Created: </td>
+            <td><%= @created_at_formatted %></td>
+          </tr>
+          <tr>
+            <td>User Updated: </td>
+            <td><%= @updated_at_formatted %></td>
+          </tr>
+          <tr>
+            <td>Current Vitality Status:</td>
+            <td>
+              <% if @is_admin: %>
+                Alive
+              <% else: %>
+                Dead
+              <% end %>
+            </td>
+          </tr>
+        </table>
+        <p><%- @linkTo "Back to User List", Routes.users_path() %></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4"></div>
+</div>
+
+
+
+
+

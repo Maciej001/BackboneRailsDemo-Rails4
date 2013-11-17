@@ -1,0 +1,18 @@
+
+nav#footer {
+  @extend .navbar, .navbar-default, .navbar-fixed-bottom;
+  div {
+    @extend .collapse, .navbar-collapse;
+    p {
+      margin: 15px 0 0;
+      text-align: center;
+    }
+    ul {
+      @extend .nav, .navbar-nav, .navbar-right;
+    }
+    p {
+      @extend .muted;
+    }
+  }
+}
+

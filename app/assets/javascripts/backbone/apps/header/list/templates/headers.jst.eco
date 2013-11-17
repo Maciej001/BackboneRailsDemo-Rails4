@@ -1,0 +1,14 @@
+<nav id="header" role="navigation">
+  <div>
+    <button type="button" data-toggle="collapse" data-target="#collapser">
+      <span>Menu</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="#">Backbone Rails Demo!</a>
+  </div>
+  <div id="collapser">
+    <ul id="toprightnav"></ul>
+  </div>
+</nav>

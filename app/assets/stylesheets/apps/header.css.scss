@@ -1,0 +1,25 @@
+nav#header {
+  @extend .navbar, .navbar-inverse, .navbar-fixed-top;
+  div:first-child {
+    @extend .navbar-header;
+    button {
+      @extend .navbar-toggle;
+      span:first-child {
+        @extend .sr-only;
+      }
+      span {
+        @extend .icon-bar;
+      }
+
+    }
+    a {
+      @extend .navbar-brand;
+    }
+  }
+  div:last-child {
+    @extend .collapse, .navbar-collapse;
+    ul {
+      @extend .nav, .navbar-nav, .navbar-right;
+    }
+  }
+}

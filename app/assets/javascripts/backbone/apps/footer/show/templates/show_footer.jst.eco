@@ -1,0 +1,15 @@
+
+<nav id="footer" role="navigation">
+  <div>
+    <ul>
+      <li><%- @linkTo "Backbone", "http://backbonejs.org/docs/backbone.html", { external: true } %></li>
+      <li><%- @linkTo "Marionette", "http://marionettejs.com/docs/backbone.marionette.html", { external: true } %></li>
+      <li><%- @linkTo "Rails", "http://api.rubyonrails.org/", { external: true } %></li>
+    </ul>
+    <% if @currentUser.is_admin: %>
+      <p>Welcome to the Backbone Rails Demo <%= @currentUser.full_name %>!</p>
+    <% else: %>
+      <p>Welcome to the Backbone Rails Demo! To Bad You Died <%= @currentUser.full_name %>!</p>
+    <% end %>
+  </div>
+</nav>

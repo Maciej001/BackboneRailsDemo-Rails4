@@ -1,0 +1,4 @@
+<td><%- @linkTo @full_name, Routes.user_path(@id) %></td>
+<td><%= @created_at_formatted %></td>
+<td><%= @updated_at_formatted %></td>
+<td><% if @is_admin: %>Yes<% else: %>No<% end %></td>
