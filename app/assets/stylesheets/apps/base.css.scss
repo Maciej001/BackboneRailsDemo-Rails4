@@ -11,8 +11,13 @@
   table {
     @extend .table, .table-condensed;
   }
-  .caption h3, p {
-    text-align: center;
+  .caption {
+    h3, p {
+      text-align: center;
+    }
+    p a {
+      @extend .btn, .btn-default, .btn-sm;
+    }
   }
 }
 

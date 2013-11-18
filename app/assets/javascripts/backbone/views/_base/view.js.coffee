@@ -17,12 +17,12 @@
       buttonTo: (name, url) ->
 
         url = "#" + url
-        "<a href='#{url}' class='btn btn-default btn-sm'>#{@escape(name)}</a>"
+        "<a href='#{url}'>#{@escape(name)}</a>"
 
       nextUserButton: (id) ->
         next = id + 1
         last = gon.users.length
         if id is last
-          "<a href='#/users/1' class='btn btn-default btn-sm'>First User</a>"
+          "<a href='#/users/1'>First User</a>"
         else
-          "<a href='#/users/#{next}' class='btn btn-default btn-sm'>Next User</a>"
+          "<a href='#/users/#{next}'>Next User</a>"
