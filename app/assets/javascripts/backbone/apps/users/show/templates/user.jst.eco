@@ -15,17 +15,18 @@
             <td><%= @updated_at_formatted %></td>
           </tr>
           <tr>
-            <td>Current Vitality Status:</td>
+            <td>Vitality Status:</td>
             <td>
               <% if @is_admin: %>
-                Alive
+                Viable
               <% else: %>
-                Dead
+                Departed
               <% end %>
             </td>
           </tr>
         </table>
-        <p><%- @linkTo "Back to User List", Routes.users_path() %></p>
+        <p><%- @buttonTo "Users List", Routes.users_path() %></p>
+        <p><%- @nextUserButton @id %></p>
       </div>
     </div>
   </div>
