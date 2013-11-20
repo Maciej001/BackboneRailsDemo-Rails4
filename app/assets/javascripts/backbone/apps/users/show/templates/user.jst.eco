@@ -1,41 +1,43 @@
-<div class="row">
-  <div class="col-sm-6 col-md-4"></div>
-  <div class="col-sm-6 col-md-4">
-    <div class="profile">
+<div id="three-col">
+  <div></div>
+  <div>
+    <div id="profile">
       <img src="assets/<%= @id %>.jpeg" >
-      <div class="caption">
+      <div id="detail">
         <h3><%= @full_name %></h3>
-        <div class="well">
+        <div>
           <table>
-            <tr>
-              <td>User Created: </td>
-              <td><%= @created_at_formatted %></td>
-            </tr>
-            <tr>
-              <td>User Updated: </td>
-              <td><%= @updated_at_formatted %></td>
-            </tr>
-            <tr>
-              <td>Vitality Status:</td>
-              <td>
-                <% if @is_admin: %>
-                  Viable
-                <% else: %>
-                  Departed
-                <% end %>
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>User Created: </td>
+                <td><%= @created_at_formatted %></td>
+              </tr>
+              <tr>
+                <td>User Updated: </td>
+                <td><%= @updated_at_formatted %></td>
+              </tr>
+              <tr>
+                <td>Vitality Status:</td>
+                <td>
+                  <% if @is_admin: %>
+                    Viable
+                  <% else: %>
+                    Departed
+                  <% end %>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
-        <div class="row">
-          <div class="col-md-6"><p><%- @prevUserButton @id %></p></div>
-          <div class="col-md-6"><p><%- @nextUserButton @id %></p></div>
+        <div id="profilenav">
+          <div><%- @prevUserButton @id %></div>
+          <div><%- @nextUserButton @id %></div>
         </div>
         <p><%- @buttonTo "Users List", Routes.users_path() %></p>
       </div>
     </div>
   </div>
-  <div class="col-sm-6 col-md-4"></div>
+  <div></div>
 </div>
 
 
