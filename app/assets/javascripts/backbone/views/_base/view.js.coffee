@@ -26,3 +26,11 @@
           "<a href='#/users/1'>First User</a>"
         else
           "<a href='#/users/#{next}'>Next User</a>"
+
+      prevUserButton: (id) ->
+        prev = id - 1
+        last = App.usersCount
+        if id is 1
+          "<a href='#/users/#{last}'>Last User</a>"
+        else
+          "<a href='#/users/#{prev}'>Previous User</a>"

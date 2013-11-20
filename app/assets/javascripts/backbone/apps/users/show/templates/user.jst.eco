@@ -5,28 +5,33 @@
       <img src="assets/<%= @id %>.jpeg" >
       <div class="caption">
         <h3><%= @full_name %></h3>
-        <table>
-          <tr>
-            <td>User Created: </td>
-            <td><%= @created_at_formatted %></td>
-          </tr>
-          <tr>
-            <td>User Updated: </td>
-            <td><%= @updated_at_formatted %></td>
-          </tr>
-          <tr>
-            <td>Vitality Status:</td>
-            <td>
-              <% if @is_admin: %>
-                Viable
-              <% else: %>
-                Departed
-              <% end %>
-            </td>
-          </tr>
-        </table>
+        <div class="well">
+          <table>
+            <tr>
+              <td>User Created: </td>
+              <td><%= @created_at_formatted %></td>
+            </tr>
+            <tr>
+              <td>User Updated: </td>
+              <td><%= @updated_at_formatted %></td>
+            </tr>
+            <tr>
+              <td>Vitality Status:</td>
+              <td>
+                <% if @is_admin: %>
+                  Viable
+                <% else: %>
+                  Departed
+                <% end %>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><p><%- @prevUserButton @id %></p></div>
+          <div class="col-md-6"><p><%- @nextUserButton @id %></p></div>
+        </div>
         <p><%- @buttonTo "Users List", Routes.users_path() %></p>
-        <p><%- @nextUserButton @id %></p>
       </div>
     </div>
   </div>
