@@ -14,6 +14,7 @@
       users = new Entities.UsersCollection
       users.fetch
         success: ->
+          App.usersCount = users.length
           callback users
 
   App.reqres.setHandler "set:current:user", (currentUser) ->
@@ -21,3 +22,4 @@
 
   App.reqres.setHandler "user:entities", (callback) ->
     API.getUserEntities callback
+

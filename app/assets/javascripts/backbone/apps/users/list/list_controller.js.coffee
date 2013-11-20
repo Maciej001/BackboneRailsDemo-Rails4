@@ -6,7 +6,6 @@
       # force rendering to wait for success response from fetch 
       # alternative is to respond to collectionEvent "sync" (not reset) in itemview
       App.request "user:entities", (users) =>
-
         @layout = @getLayoutView()
 
         @layout.on "show", =>
@@ -14,7 +13,6 @@
           @showUsers users
 
         App.mainRegion.show @layout
-
 
     showPanel: (users) ->
       panelView = @getPanelView users

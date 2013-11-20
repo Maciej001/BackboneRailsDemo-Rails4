@@ -21,7 +21,7 @@
 
       nextUserButton: (id) ->
         next = id + 1
-        last = gon.users.length
+        last = App.usersCount
         if id is last
           "<a href='#/users/1'>First User</a>"
         else

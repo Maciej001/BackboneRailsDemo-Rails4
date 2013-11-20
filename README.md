@@ -6,7 +6,7 @@ Basic updating of BackboneRails.com Episode 6 Demo App to Rails 4.
 ## Key Differences
 
 * Obviously, Rails 4.0.1
-* Update to Backbone 1.1.0, Marionette 1.2.2 - both resulting in minor changes in Wreqr calls
+* Update to Backbone 1.1.0, Marionette 1.2.3 - both resulting in minor changes in Wreqr calls
 * Using postgresql as DB for a closer to production feel
 * Use of native JBuilder instead of RABL gem
 * Update of Twitter Bootstrap and removal of associated cruft from HTML - moving it into SASS @extend statements

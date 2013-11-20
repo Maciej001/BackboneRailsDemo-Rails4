@@ -1,23 +1,22 @@
 
 #main-region {
   margin-top: 70px;
-}
-
-.profile {
-  @extend .thumbnail;
-  img {
-    @extend .img-rounded;
-    margin-top: 15px;
-  } 
-  table {
-    @extend .table, .table-condensed;
-  }
-  .caption {
-    h3, p {
-      text-align: center;
+  .profile {
+    @extend .thumbnail;
+    img {
+      @extend .img-rounded;
+      margin-top: 15px;
+    } 
+    table {
+      @extend .table, .table-condensed;
     }
-    p a {
-      @extend .btn, .btn-default, .btn-sm;
+    .caption {
+      h3, p {
+        text-align: center;
+      }
+      p a {
+        @extend .btn, .btn-default, .btn-sm;
+      }
     }
   }
 }

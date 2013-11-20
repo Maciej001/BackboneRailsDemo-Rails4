@@ -1,7 +1,6 @@
-<% window.dpf = @items %>
 <div><h3>Current Users</h3></div>
 <div>
   <p>Total Users: <%= @items.length %></p>
-  <p>Living Users: <%= (@items.filter( (item) -> item.is_admin)).length %>
+  <p>Living Users: <%= (@items.filter( (item) -> item.is_admin )).length %>
   </p>
 </div>
