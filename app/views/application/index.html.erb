@@ -4,8 +4,11 @@
 
 <script>
   $(function() {
-    return BMRDemo.start({
+    BMRDemo.start({
       currentUser: gon.current_user[0]
+    });
+    return $("#toprightnav a").on("click", function() {
+      $("nav#header button").click();
     });
   });
 </script>
