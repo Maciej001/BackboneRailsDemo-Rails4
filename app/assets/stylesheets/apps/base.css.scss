@@ -24,7 +24,7 @@
     #detail {
       @extend .caption;
       > div:first-of-type {
-          @extend .well;
+          @extend .well, .well-sm;
       }
       h3, p {
         text-align: center;
