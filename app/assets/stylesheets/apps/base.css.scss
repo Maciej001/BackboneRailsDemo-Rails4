@@ -29,9 +29,6 @@
       h3, p {
         text-align: center;
       }
-      p {
-        margin-top: 10px;
-      }
       a {
         @extend .btn, .btn-default, .btn-sm;
       }
@@ -40,6 +37,9 @@
         div {
           @extend .col-sm-6;
           text-align: center;
+          a {
+            margin-bottom: 10px;
+          }
         }
       }
     }
