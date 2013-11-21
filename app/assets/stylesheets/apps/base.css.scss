@@ -5,12 +5,10 @@
   margin-top: 70px;
   #three-col {
     @extend .row;
-    div:first-child {
-      @extend .col-sm-4;
-    }
   }
   #profile {
     @extend .thumbnail;
+    @extend .col-sm-6, .col-sm-offset-3;
     img {
       @extend .img-rounded;
       margin-top: 15px;
@@ -31,13 +29,16 @@
       h3, p {
         text-align: center;
       }
+      p {
+        margin-top: 10px;
+      }
       a {
         @extend .btn, .btn-default, .btn-sm;
       }
       #profilenav {
         @extend .row;
         div {
-          @extend .col-md-6;
+          @extend .col-sm-6;
           text-align: center;
         }
       }
