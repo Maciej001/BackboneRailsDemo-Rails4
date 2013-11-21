@@ -4,14 +4,12 @@ nav#footer {
   div {
     @extend .collapse, .navbar-collapse;
     p {
+      @extend .text-muted;
       margin: 15px 0 0;
       text-align: center;
     }
     ul {
       @extend .nav, .navbar-nav, .navbar-right;
-    }
-    p {
-      @extend .muted;
     }
   }
 }
