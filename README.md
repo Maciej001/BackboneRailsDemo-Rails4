@@ -1,7 +1,7 @@
 # BackboneRails.com Demo App Updated for Rails 4
 
 
-Basic updating of BackboneRails.com Episode 6 Demo App to Rails 4.
+Basic updating of BackboneRails.com Episode 6 Demo App to Rails 4 with a few minor additions.
 
 ## Key Differences
 
