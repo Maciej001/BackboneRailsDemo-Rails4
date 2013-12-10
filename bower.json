@@ -1,0 +1,10 @@
+{
+  "name": "BMRDemo",
+  "version": "0.0.1",
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "marionette": "~1.4.1",
+    "underscore": "~1.5.2",
+    "spinjs": "~1.3.2"
+  }
+}

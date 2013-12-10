@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require lib/underscore
-//= require lib/backbone
-//= require lib/marionette
+//= require underscore/underscore
+//= require backbone/backbone
+//= require marionette/lib/backbone.marionette
 //= require twitter/bootstrap
 //= require js-routes
 //= require_tree ./backbone/config
